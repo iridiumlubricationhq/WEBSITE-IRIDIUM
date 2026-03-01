@@ -42,7 +42,7 @@ const SPECIALISTS_DATA = [
 
 const BrandLogo = () => (
   <div className="flex items-center gap-2">
-    <ImageWithFallback src={IMG_LOGO} alt="Iridium Logo" className="h-8 w-auto object-contain" loading="lazy" width="150" height="32" />
+    <ImageWithFallback src={IMG_LOGO} alt="Iridium Logo" className="h-8 w-auto object-contain" loading="lazy" width="261" height="56" />
   </div>
 );
 
@@ -284,8 +284,8 @@ const Hero = () => {
           src={IMG_HERO} 
           alt="Servis Kereta Premium" 
           className="w-full h-full object-cover"
-          width="1920"
-          height="1080"
+          width="784"
+          height="1050"
           loading="eager"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-iridium-black via-iridium-black/80 to-iridium-black/30"></div>
@@ -443,8 +443,8 @@ const WhyChooseUs = () => {
                 alt="Mekanik bekerja" 
                 className="relative rounded-xl shadow-2xl w-full grayscale hover:grayscale-0 transition-all duration-500 object-cover h-[300px] md:h-[400px]"
                 loading="lazy"
-                width="600"
-                height="400"
+                width="700"
+                height="525"
               />
             </div>
           </div>
