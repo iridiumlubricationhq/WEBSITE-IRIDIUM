@@ -42,7 +42,7 @@ const SPECIALISTS_DATA = [
 
 const BrandLogo = () => (
   <div className="flex items-center gap-2">
-    <ImageWithFallback src={IMG_LOGO} alt="Iridium Logo" className="h-8 object-contain" loading="lazy" width="150" height="32" />
+    <ImageWithFallback src={IMG_LOGO} alt="Iridium Logo" className="h-8 w-auto object-contain" loading="lazy" width="150" height="32" />
   </div>
 );
 
@@ -236,7 +236,8 @@ const Navbar = () => {
           <button 
             className="lg:hidden text-white p-2 focus-visible:ring-2 focus-visible:ring-iridium-gold focus-visible:outline-none rounded-lg"
             onClick={() => setIsOpen(!isOpen)}
-            aria-label="Toggle menu"
+            aria-label={isOpen ? "Tutup menu" : "Buka menu"}
+            aria-expanded={isOpen}
           >
             {isOpen ? <X /> : <Menu />}
           </button>
@@ -285,6 +286,7 @@ const Hero = () => {
           className="w-full h-full object-cover"
           width="1920"
           height="1080"
+          loading="eager"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-iridium-black via-iridium-black/80 to-iridium-black/30"></div>
       </div>
@@ -338,7 +340,7 @@ const Hero = () => {
               <div className="flex -space-x-2">
                 {[1,2,3].map(i => (
                   <div key={i} className="w-8 h-8 rounded-full bg-gray-600 border-2 border-iridium-black overflow-hidden">
-                     <ImageWithFallback src={`https://picsum.photos/seed/face${i}/100/100`} alt="User" loading="lazy" />
+                     <ImageWithFallback src={`https://picsum.photos/seed/face${i}/100/100`} alt="User" loading="lazy" width="32" height="32" />
                   </div>
                 ))}
               </div>
@@ -363,6 +365,7 @@ const Hero = () => {
 const TrustBar = () => {
   return (
     <section className="bg-iridium-dark-gray border-y border-white/5 py-12 relative z-20">
+      <h2 className="sr-only">Kenapa Percaya Kami</h2>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
           {TRUST_ITEMS.map((item, idx) => (
@@ -370,7 +373,7 @@ const TrustBar = () => {
               <div className="w-12 h-12 rounded-full bg-iridium-gold/10 flex items-center justify-center mb-4 group-hover:bg-iridium-gold transition-colors duration-300">
                 <item.icon className="text-iridium-gold group-hover:text-iridium-black transition-colors duration-300" size={24} />
               </div>
-              <div className="text-lg md:text-xl font-bold text-white mb-1">{item.label}</div>
+              <h3 className="text-lg md:text-xl font-bold text-white mb-1">{item.label}</h3>
               <p className="text-xs md:text-sm text-gray-500 uppercase tracking-wider">{item.sub}</p>
             </div>
           ))}
@@ -641,10 +644,11 @@ const FAQ = () => {
               <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
                 className="w-full flex items-center justify-between p-6 text-left focus:outline-none"
+                aria-expanded={openIndex === index}
               >
-                <span className={`font-bold text-lg ${openIndex === index ? 'text-iridium-gold' : 'text-white'}`}>
+                <h3 className={`font-bold text-lg ${openIndex === index ? 'text-iridium-gold' : 'text-white'}`}>
                   {faq.question}
-                </span>
+                </h3>
                 <ChevronDown 
                   className={`w-5 h-5 text-gray-400 transition-transform duration-300 ${openIndex === index ? 'rotate-180 text-iridium-gold' : ''}`} 
                 />
