@@ -6,11 +6,11 @@ import { ImageWithFallback } from './components/ImageWithFallback';
 const WHATSAPP_LINK = "https://wa.me/60103756016";
 
 // Image Paths - Using EdgeOne direct links
-const IMG_LOGO = "https://quick-peach-3qmttuq1nx.edgeone.app/LOGO%20LONG@2x.png?format=webp&width=261&height=56&quality=80";
-const IMG_HERO = "https://quick-peach-3qmttuq1nx.edgeone.app/HERO.png?format=webp&width=784&height=1050&quality=80";
-const IMG_WHY_US = "https://extended-salmon-oeoczyyb3g.edgeone.app/B.jpeg?format=webp&width=700&height=525&quality=80";
-const IMG_TESTIMONIAL = "https://cuddly-silver-cnknukouvw.edgeone.app/WhatsApp%20Image%202026-02-28%20at%2011.16.13%20AM%20(2).jpeg?format=webp&width=400&quality=80";
-const IMG_LOCATION = "https://cuddly-silver-cnknukouvw.edgeone.app/gemini-3-pro-image-preview-2k_a_swap_the_product_on_.png?format=webp&width=800&quality=80";
+const IMG_LOGO = "https://quick-peach-3qmttuq1nx.edgeone.app/LOGO%20LONG@2x.png?imageMogr2/thumbnail/261x/interlace/1/quality/80/format/webp";
+const IMG_HERO = "https://quick-peach-3qmttuq1nx.edgeone.app/HERO.png?imageMogr2/thumbnail/800x/interlace/1/quality/80/format/webp";
+const IMG_WHY_US = "https://extended-salmon-oeoczyyb3g.edgeone.app/B.jpeg?imageMogr2/thumbnail/700x/interlace/1/quality/80/format/webp";
+const IMG_TESTIMONIAL = "https://cuddly-silver-cnknukouvw.edgeone.app/WhatsApp%20Image%202026-02-28%20at%2011.16.13%20AM%20(2).jpeg?imageMogr2/thumbnail/400x/interlace/1/quality/80/format/webp";
+const IMG_LOCATION = "https://cuddly-silver-cnknukouvw.edgeone.app/gemini-3-pro-image-preview-2k_a_swap_the_product_on_.png?imageMogr2/thumbnail/800x/interlace/1/quality/80/format/webp";
 
 const SOCIAL_LINKS = [
   { name: "Instagram", icon: Instagram, href: "https://www.instagram.com/serviskeretairidium/?hl=en" },
@@ -22,19 +22,19 @@ const SOCIAL_LINKS = [
 const SPECIALISTS_DATA = [
   {
     role: "Pakar Penasihat",
-    image: "https://quick-peach-3qmttuq1nx.edgeone.app/1.png?format=webp&width=340&height=420&quality=80",
+    image: "https://quick-peach-3qmttuq1nx.edgeone.app/1.png?imageMogr2/thumbnail/340x/interlace/1/quality/80/format/webp",
     link: "https://wa.link/6bjcko",
     desc: "Khidmat nasihat jujur & telus. Kami takkan suggest tukar barang yang tak perlu."
   },
   {
     role: "Pakar Tayar & Handling",
-    image: "https://quick-peach-3qmttuq1nx.edgeone.app/A.png?format=webp&width=340&height=420&quality=80",
+    image: "https://quick-peach-3qmttuq1nx.edgeone.app/A.png?imageMogr2/thumbnail/340x/interlace/1/quality/80/format/webp",
     link: "https://wa.link/83bsd3",
     desc: "Pastikan perjalanan anda selamat & selesa. Tayar, alignment & balancing padu."
   },
   {
     role: "Pakar Aircond & Elektrik",
-    image: "https://quick-peach-3qmttuq1nx.edgeone.app/3.png?format=webp&width=340&height=420&quality=80",
+    image: "https://quick-peach-3qmttuq1nx.edgeone.app/3.png?imageMogr2/thumbnail/340x/interlace/1/quality/80/format/webp",
     link: "https://wa.link/mo08el",
     desc: "Diagnostik tepat untuk masalah aircond tak sejuk atau wiring problem."
   }
