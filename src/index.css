@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
 @import "tailwindcss";
 
 @theme {
@@ -48,6 +48,21 @@ body {
   background-color: var(--color-iridium-black);
   color: white;
   font-family: var(--font-gotham);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: -0.015em; /* Professional Gotham-style kerning */
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: -0.03em; /* Tighter kerning for headings */
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+p {
+  letter-spacing: -0.01em;
+  line-height: 1.7;
 }
 
 .text-gradient-gold {
